@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<style media="screen">
+  .navbar-inverse{
+    background-color:purple;
+
+  }
+</style>
+  </head>
+  <body>
+    <div class="container">
+
+
+    <nav class="navbar navbar-default navbar-inverse">
+      <div class="navbar-header">
+        <a class="navbar-brand"href="/">EXAM</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/java">JavaExam</a></li>
+        <li><a href="/python">PythonExam</a></li>
+        <li><a href="/django">Django Exam</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/signup">SignUp</a></li>
+        <li><a href="/accounts/login">Login</a></li>
+        <li><a href="/accounts/logout">Logout</a></li>
+      </ul>
+    </nav>
+    {%block bodyblock%}
+    {%endblock%}
+  </body>
+</div>

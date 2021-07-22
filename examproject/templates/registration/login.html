@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+{%block bodyblock%}
+  <div class="container" align='center'>
+    <h2>To write exam please provide login</h2>
+    <form  method="post">
+      {{form.as_p}}
+      {%csrf_token%}
+      <input type="submit" class="btn btn-success btn-lg" value="Login">
+    </form>
+
+  </div>
+{%endblock%}
